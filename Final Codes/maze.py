@@ -223,7 +223,7 @@ if __name__ == "__main__":
     except AssertionError as e:
         print(("BFS answer is invalid"))
         #print(("BFS answer is invalid: " + e.message))
-   #UNCOMMENT TO DISABLE BFS """
+    #UNCOMMENT TO DISABLE BFS """
 
     #"""  UNCOMMENT TO DISABLE DFS
     print(">> Testing DFS solver...")
@@ -240,7 +240,7 @@ if __name__ == "__main__":
         print(("DFS answer is invalid"))
     #UNCOMMENT TO DISABLE DFS """
 
-    #"""  UNCOMMENT TO DISABLE DFS
+    #"""  UNCOMMENT TO DISABLE iter DFS
     print(">> Testing Iterative DFS solver...")
     iter_dfs_path = iterative_dfs_solver(m)
     try:
@@ -253,22 +253,7 @@ if __name__ == "__main__":
             d.draw_path(iter_dfs_path)
     except AssertionError as e:
         print(("Iterative DFS answer is invalid"))
-    #UNCOMMENT TO DISABLE DFS """
-
-    #"""  UNCOMMENT TO DISABLE DFS
-    print(">> Testing DLS solver...")
-    dls_path = dls_solver(m, 40)
-    try:
-        validate_answer(m, dfs_path)
-        print(("DLS solved maze. cost: ", len(dls_path), "cells visited"))
-
-        print ("Display DLS solution? [y/n]")
-        display_command = (input())
-        if "y" in display_command:
-            d.draw_path(dls_path)
-    except AssertionError as e:
-        print(("DLS answer is invalid: "+ str(dls_path)))
-    #UNCOMMENT TO DISABLE DFS """
+    #UNCOMMENT TO DISABLE iter DFS """
 
     #"""  UNCOMMENT TO DISABLE A*
     print(">> Testing A* solver...")
