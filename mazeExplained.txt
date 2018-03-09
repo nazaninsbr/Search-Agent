@@ -1,0 +1,26 @@
+main function 
+	
+	1 - create an instance of the maze class 
+	2 - then it calls the setup_maze function of the maze class
+	3 - it then creates an instance of the Displayer classes and passes the maze as an argument
+
+	4 - there are a bunch of commented lines that will check our algorithm 
+
+	5 - we are asked if we want to exit or to save the file 
+
+lets see what each step does:
+	1 - calls the __init__ function that creates some variables 
+		* cell
+		* nrows
+		* ncols 
+		* goal 
+		* start
+
+	2- setup_maze is the function that asks us if we want to load the maze or generate a random one 
+		* this function calls the generate_maze function if we ask it to generate a maze
+		* calls read_from_file if we ask it to load the maze
+
+			-- read_from_file
+
+
+			-- generate_maze
